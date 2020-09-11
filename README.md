@@ -15,13 +15,13 @@ docker network create --driver bridge skynet
 ## MongoDB
 
 `
-docker run --name mongo --network=skynet -d -p 27017:27017 mongo
+docker run --name mongo --network=skynet -d -p 27017:27017 mongo:4.1
 `
 
 ## RabbitMQ
 
 `
-docker run -d --hostname rabbitmq --name rabbitmq --network=skynet -p 15672:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-management
+docker run -d --hostname rabbitmq --name rabbitmq --network=skynet -p 15672:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3.7.15-management
 `
 ### Hosteando
 

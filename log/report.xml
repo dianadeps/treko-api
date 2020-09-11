@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.08" tests="13" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-09-11T20:38:36" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="delete" timestamp="2020-09-11T20:38:36" tests="0" file="/Users/papito/Work/Temp/treko-api/test/delete.spec.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="quando apago uma tarefa" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/delete.spec.js" failures="0" time="0.007">
+    <testcase name="delete quando apago uma tarefa então o retorno deve ser 404" time="0.007" classname="então o retorno deve ser 404">
+    </testcase>
+  </testsuite>
+  <testsuite name="quando a tarefa nao existe" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/delete.spec.js" failures="0" time="0.005">
+    <testcase name="delete quando a tarefa nao existe deve retornar 200" time="0.005" classname="deve retornar 200">
+    </testcase>
+  </testsuite>
+  <testsuite name="get" timestamp="2020-09-11T20:38:36" tests="0" file="/Users/papito/Work/Temp/treko-api/test/get.spec.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="quando eu tenho tarefas cadastradas" timestamp="2020-09-11T20:38:36" tests="2" file="/Users/papito/Work/Temp/treko-api/test/get.spec.js" failures="0" time="0.012">
+    <testcase name="get quando eu tenho tarefas cadastradas deve retornar uma lista" time="0.007" classname="deve retornar uma lista">
+    </testcase>
+    <testcase name="get quando eu tenho tarefas cadastradas deve filtrar por palavra chave" time="0.005" classname="deve filtrar por palavra chave">
+    </testcase>
+  </testsuite>
+  <testsuite name="quando busco por id" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/get.spec.js" failures="0" time="0.006">
+    <testcase name="get quando busco por id deve retornar uma única tarefa" time="0.006" classname="deve retornar uma única tarefa">
+    </testcase>
+  </testsuite>
+  <testsuite name="quando a tarefa nao existe" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/get.spec.js" failures="0" time="0.003">
+    <testcase name="get quando a tarefa nao existe deve retornar 404" time="0.003" classname="deve retornar 404">
+    </testcase>
+  </testsuite>
+  <testsuite name="post" timestamp="2020-09-11T20:38:36" tests="0" file="/Users/papito/Work/Temp/treko-api/test/post.spec.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="quando eu cadastro uma tarefa" timestamp="2020-09-11T20:38:36" tests="2" file="/Users/papito/Work/Temp/treko-api/test/post.spec.js" failures="0" time="0.024">
+    <testcase name="post quando eu cadastro uma tarefa entao deve retornar 200" time="0.015" classname="entao deve retornar 200">
+    </testcase>
+    <testcase name="post quando eu cadastro uma tarefa e deve enviar email" time="0.009" classname="e deve enviar email">
+    </testcase>
+  </testsuite>
+  <testsuite name="quando nao informo o titulo" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/post.spec.js" failures="0" time="0.003">
+    <testcase name="post quando nao informo o titulo entao deve retornar 400" time="0.003" classname="entao deve retornar 400">
+    </testcase>
+  </testsuite>
+  <testsuite name="quando nao informo o dono" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/post.spec.js" failures="0" time="0.003">
+    <testcase name="post quando nao informo o dono entao deve retornar 400" time="0.003" classname="entao deve retornar 400">
+    </testcase>
+  </testsuite>
+  <testsuite name="quando a tarefa já existe" timestamp="2020-09-11T20:38:36" tests="1" file="/Users/papito/Work/Temp/treko-api/test/post.spec.js" failures="0" time="0.005">
+    <testcase name="post quando a tarefa já existe deve retornar 409" time="0.005" classname="deve retornar 409">
+    </testcase>
+  </testsuite>
+  <testsuite name="put" timestamp="2020-09-11T20:38:36" tests="0" file="/Users/papito/Work/Temp/treko-api/test/put.spec.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="quando eu altero uma tarefa" timestamp="2020-09-11T20:38:36" tests="2" file="/Users/papito/Work/Temp/treko-api/test/put.spec.js" failures="0" time="0.012">
+    <testcase name="put quando eu altero uma tarefa entao deve retornar 200" time="0.007" classname="entao deve retornar 200">
+    </testcase>
+    <testcase name="put quando eu altero uma tarefa e deve retornar os dados atualizados" time="0.005" classname="e deve retornar os dados atualizados">
+    </testcase>
+  </testsuite>
+</testsuites>

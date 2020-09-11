@@ -14,7 +14,7 @@ describe('get', () => {
 
         before((done) => {
             let tasks = [
-                { title: 'Estudar NodejS', owner: 'eu@papito.io', done: false },
+                { title: 'Aprender NodejS', owner: 'eu@papito.io', done: false },
                 { title: 'Fazer compras', owner: 'eu@papito.io', done: false },
                 { title: 'Estudar MongoDB', owner: 'eu@papito.io', done: true }
             ]
@@ -38,11 +38,10 @@ describe('get', () => {
         it('deve filtrar por palavra chave', (done) => {
             request
                 .get('/task')
-                .query({ title: 'Estudar' })
+                .query({ title: 'MongoDB' })
                 .end((err, res) => {
                     expect(res).to.has.status(200);
-                    expect(res.body.data[0].title).to.equal('Estudar NodejS')
-                    expect(res.body.data[1].title).to.equal('Estudar MongoDB')
+                    expect(res.body.data[0].title).to.equal('Estudar MongoDB')
                     done();
                 })
         })
