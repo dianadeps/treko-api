@@ -1,19 +1,14 @@
 pipeline {
   agent {
     docker {
-      image "node:alpine"
-      args "--network=skynet"
-    }
+      image "node:8-alpine"
+       }
   }
   stages {
     stage("Build") {
-      steps {
-        
+      steps 
         sh "npm install"
-      }
-    }
-   
-   
-     
+      } 
+  }
   }
 }
